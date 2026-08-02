@@ -1,1 +1,141 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f5f9ff;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#0056D2;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+header h1{
+
+    font-size:42px;
+
+}
+
+header p{
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav{
+
+    background:#003d99;
+
+    text-align:center;
+
+    padding:18px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:20px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:#00ff99;
+
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+main{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:50px 0;
+
+}
+
+section{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+}
+
+section h2{
+
+    color:#0056D2;
+
+    margin-bottom:20px;
+
+}
+
+section p{
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#003d99;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
