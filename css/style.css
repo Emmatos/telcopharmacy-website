@@ -60,6 +60,12 @@ nav{
 
     padding:18px;
 
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
 }
 
 nav a{
@@ -152,7 +158,7 @@ footer{
 
     background-position:center;
 
-    height:650px;
+    height:700px;
 
     position:relative;
 
@@ -186,9 +192,7 @@ footer{
 
 .logo{
 
-    width:140px;
-
-    margin-bottom:20px;
+    width:170px;
 
 }
 
@@ -244,7 +248,7 @@ footer{
 
     font-weight:bold;
 
-    transition:.3s;
+    transition:.4s;
 
 }
 
@@ -252,8 +256,9 @@ footer{
 
     background:#0080ff;
 
-}
+    transform:translateY(-4px);
 
+}
 .btn2{
 
     background:#25D366;
