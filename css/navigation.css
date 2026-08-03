@@ -1,1 +1,35 @@
+nav{
 
+    background:#003d99;
+
+    text-align:center;
+
+    padding:18px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:20px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:#00ff99;
+
+}
