@@ -22,7 +22,7 @@
 
     background:rgba(0,40,90,.55);
 
-    min-height:700px;
+    min-height:100vh;
 
     display:flex;
 
@@ -36,20 +36,17 @@
 
     color:white;
 
-    padding:20px;
-
 }
 
 /* Logo */
 
 .logo{
 
-    width:170px;
+    width:150px;
 
     margin-bottom:20px;
 
 }
-
 /* Hero Headings */
 
 .hero h1{
