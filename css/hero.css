@@ -4,15 +4,13 @@
 
 .hero{
 
-    background-image:url("../images/pharmacy-front.jpg");
+    background-image:url("../images/pharmacy-front.jpg.jpeg");
 
     background-size:cover;
 
     background-position:center;
 
-    background-repeat:no-repeat;
-
-    min-height:700px;
+    min-height:100vh;
 
     position:relative;
 
