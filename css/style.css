@@ -1,5 +1,11 @@
+@import url("hero.css");
 @import url("navigation.css");
-@import url("navigation.css");
+@import url("services.css");
+@import url("gallery.css");
+@import url("portal.css");
+@import url("contact.css");
+@import url("footer.css");
+@import url("responsive.css");
 
 /* ===========================
    GENERAL STYLES
