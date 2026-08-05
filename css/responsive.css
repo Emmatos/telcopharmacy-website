@@ -137,19 +137,21 @@
 
     .nav-links.active{
 
-        max-height:500px;
+    max-height:500px;
 
-        opacity:1;
+    opacity:1;
 
-        margin-top:15px;
+    transform:translateY(0);
 
-        background:white;
+    margin-top:15px;
 
-        border-radius:10px;
+    background:white;
 
-        box-shadow:0 8px 25px rgba(0,0,0,.15);
+    border-radius:10px;
 
-    }
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+}
 
     .nav-links a{
 
