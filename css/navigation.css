@@ -60,4 +60,18 @@ nav{
 
     cursor:pointer;
 
+    background:#0056D2;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.menu-toggle:hover{
+
+    background:#0077ff;
+
 }
