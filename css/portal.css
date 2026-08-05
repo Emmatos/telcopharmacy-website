@@ -1,1 +1,81 @@
+/* ==========================================
+   PATIENT PORTAL
+========================================== */
 
+.portal-preview{
+
+    margin-top:80px;
+
+    margin-bottom:80px;
+
+}
+
+.portal-preview h2{
+
+    text-align:center;
+
+    color:#0056D2;
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.portal-intro{
+
+    text-align:center;
+
+    font-size:20px;
+
+    margin-bottom:45px;
+
+}
+
+.portal-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.portal-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.portal-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.portal-card h3{
+
+    color:#0056D2;
+
+    margin-bottom:20px;
+
+}
+
+.portal-card p{
+
+    margin-bottom:25px;
+
+}
