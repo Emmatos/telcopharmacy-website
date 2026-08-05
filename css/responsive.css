@@ -230,3 +230,17 @@
     }
 
 }
+
+/* =====================================
+   WHY CHOOSE US (Responsive)
+===================================== */
+
+@media (max-width:768px){
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
