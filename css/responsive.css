@@ -192,3 +192,17 @@
     }
 
 }
+
+/* =====================================
+   RESPONSIVE PATIENT PORTAL
+===================================== */
+
+@media (max-width:768px){
+
+    .portal-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
