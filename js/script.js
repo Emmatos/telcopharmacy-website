@@ -1,6 +1,6 @@
 const menu = document.getElementById("mobile-menu");
-
 const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links a");
 
 menu.addEventListener("click", () => {
 
@@ -15,5 +15,17 @@ menu.addEventListener("click", () => {
         menu.innerHTML = "☰";
 
     }
+
+});
+
+links.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        menu.innerHTML = "☰";
+
+    });
 
 });
