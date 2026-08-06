@@ -29,3 +29,23 @@ links.forEach(link => {
     });
 
 });
+
+/* ===========================
+   Appointment Form
+=========================== */
+
+const appointmentForm = document.getElementById("appointmentForm");
+
+if (appointmentForm) {
+
+    appointmentForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert("✅ Thank you! Your appointment request has been received. We will contact you shortly.");
+
+        appointmentForm.reset();
+
+    });
+
+}
