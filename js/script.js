@@ -42,10 +42,14 @@ if (appointmentForm) {
 
         event.preventDefault();
 
-        alert("✅ Thank you! Your appointment request has been received. We will contact you shortly.");
+        const successMessage = document.getElementById("successMessage");
 
-        appointmentForm.reset();
+successMessage.style.display = "block";
 
-    });
+appointmentForm.reset();
+
+successMessage.scrollIntoView({
+    behavior: "smooth"
+});
 
 }
