@@ -38,18 +38,47 @@ const appointmentForm = document.getElementById("appointmentForm");
 
 if (appointmentForm) {
 
-    appointmentForm.addEventListener("submit", function(event) {
+    appointmentForm.addEventListener("submit", function(event){
 
-        event.preventDefault();
+    event.preventDefault();
 
-        const successMessage = document.getElementById("successMessage");
+    // Collect form values
+    const fullName = document.getElementById("fullname").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value;
 
-successMessage.style.display = "block";
+    // Create WhatsApp message
+    const whatsappMessage =
+`*New Appointment Request*
 
-appointmentForm.reset();
+👤 Name: ${fullName}
 
-successMessage.scrollIntoView({
-    behavior: "smooth"
+📧 Email: ${email}
+
+📞 Phone: ${phone}
+
+🩺 Service: ${service}
+
+💬 Message:
+${message}`;
+
+    // Your WhatsApp number (Nigeria)
+    const whatsappURL =
+`https://wa.me/2347051621000?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp
+    window.open(whatsappURL, "_blank");
+
+    // Show success message
+    const successMessage = document.getElementById("successMessage");
+
+    successMessage.style.display = "block";
+
+    // Reset form
+    appointmentForm.reset();
+
 });
 
 }
