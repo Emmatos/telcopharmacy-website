@@ -42,43 +42,48 @@ if (appointmentForm) {
 
     event.preventDefault();
 
-    // Collect form values
-    const fullName = document.getElementById("fullname").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const service = document.getElementById("service").value;
-    const message = document.getElementById("message").value;
+    const formData = {
 
-    // Create WhatsApp message
-    const whatsappMessage =
-`*New Appointment Request*
+        fullname: document.getElementById("fullname").value,
 
-👤 Name: ${fullName}
+        email: document.getElementById("email").value,
 
-📧 Email: ${email}
+        phone: document.getElementById("phone").value,
 
-📞 Phone: ${phone}
+        service: document.getElementById("service").value,
 
-🩺 Service: ${service}
+        message: document.getElementById("message").value
 
-💬 Message:
-${message}`;
+    };
 
-    // Your WhatsApp number (Nigeria)
-    const whatsappURL =
-`https://wa.me/2347051621000?text=${encodeURIComponent(whatsappMessage)}`;
+    emailjs.send(
 
-    // Open WhatsApp
-    window.open(whatsappURL, "_blank");
+        "Telco_Service_1elco2",
 
-    // Show success message
-    const successMessage = document.getElementById("successMessage");
+        "Telco_Template_1elco3",
 
-    successMessage.style.display = "block";
+        formData
 
-    // Reset form
-    appointmentForm.reset();
+    )
 
-});
+    .then(function(){
+
+        const successMessage = document.getElementById("successMessage");
+
+        successMessage.style.display = "block";
+
+        appointmentForm.reset();
+
+    })
+
+    .catch(function(error){
+
+        alert("Email could not be sent.");
+
+        console.log(error);
+
+    });
+
+});;
 
 }
