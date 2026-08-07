@@ -58,13 +58,13 @@ if (appointmentForm) {
 
     emailjs.send(
 
-        "Telco_Service_1elco2",
+    APP_CONFIG.EMAILJS.SERVICE_ID,
 
-        "Telco_Template_1elco3",
+    APP_CONFIG.EMAILJS.TEMPLATE_ID,
 
-        formData
+    formData
 
-    )
+)
 
     .then(function(){
 
