@@ -66,24 +66,24 @@ if (appointmentForm) {
 
 )
 
-    .then(function(){
+    .then(function () {
 
-        const successMessage = document.getElementById("successMessage");
+    const successMessage = document.getElementById("successMessage");
 
-        successMessage.style.display = "block";
+    successMessage.style.display = "block";
 
-        appointmentForm.reset();
-
-    })
-
-    .catch(function(error){
-
-        alert("Email could not be sent.");
-
-        console.log(error);
-
+    successMessage.scrollIntoView({
+        behavior: "smooth"
     });
 
-});;
+    appointmentForm.reset();
 
-}
+})
+
+.catch(function (error) {
+
+    alert("Unable to send your appointment request at the moment. Please try again or contact us on WhatsApp.");
+
+    console.error(error);
+
+});
