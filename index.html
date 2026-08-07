@@ -512,17 +512,19 @@
 
     <!-- Link to JavaScript -->
     <!-- EmailJS Library -->
+<!-- Configuration -->
+<script src="js/config.js"></script>
+
+<!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-(function(){
-    emailjs.init({
-        publicKey: "Zdzxkv8RrP7IN_cPr",
-    });
-})();
+emailjs.init({
+    publicKey: APP_CONFIG.EMAILJS.PUBLIC_KEY
+});
 </script>
 
-<!-- Your JavaScript -->
+<!-- Main JavaScript -->
 <script src="js/script.js"></script>
 
 </body>
