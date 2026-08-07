@@ -511,8 +511,19 @@
 </footer>
 
     <!-- Link to JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init({
+        publicKey: "Zdzxkv8RrP7IN_cPr",
+    });
+})();
+</script>
+
+<!-- Your JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
